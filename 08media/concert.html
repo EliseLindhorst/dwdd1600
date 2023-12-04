@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="description" content="Purchase your tickets for the Silk Sonic concert"/>
+    <meta charset="UTF-8">
+    <title>Silk Sonic: Concert</title>
+    <link rel="stylesheet" href="silksonic.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <img src="images/logo.png" alt="site logo" width="100px">
+        <div>
+        <h1>Silk Sonic</h1>
+        <p>Enjoy a night out with Silk Sonic and guest host Bootsy Collins</p>
+        </div>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">An Evening with Silk Sonic</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="tour.html">Tours</a></li>
+            <li class="active"><a href="concert.html">Buy Concert Tickets</a></li>
+            <li><a href="venue.html">Venue Location</a></li>
+            <li><a href="video.html">Videos</a></li>
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Buy Concert Tickets</h1>
+       <form method="get" class="myform" action="thanks.html">
+        <fieldset>
+        <legend>Personal Information</legend>
+     <label>First Name: <input type="text" name="firstname" required></label>
+     <label> Last Name: <input type="text" name="lastname" required></label> 
+     <label> Cell Number: <input type="tel" name="phone" required placeholder="123-456-7890"> </label> <br>
+     <label> Email: <input type="email" name="email" required placeholder="randomname@email.com"></label>
+    </fieldset>
+
+    <fieldset>
+     <legend>Concert Dates</legend>
+<label><input type="radio" name="method" value="drone"> December 21st</label> 
+<label><input type="radio" name="method" value="cycle"> December 22nd</label> 
+<label><input type="radio" name="method" value="robot"> December 23rd</label> 
+</fieldset>
+
+<fieldset>
+<legend>Add Ons</legend>
+<label><input type="checkbox" name="merch" value="merch"> Early Merch Access</label> 
+<label><input type="checkbox" name="early entry" value="early entry"> Early Entry</label> 
+<label><input type="checkbox" name="photo opp" value="photo opp"> Photo Opp</label> 
+<label><input type="checkbox" name="food and bev" value="food and bev"> Food and Beverage</label> 
+</fieldset>
+
+<fieldset>
+    <legend>VIP Package Options</legend>
+    <label>VIP Package Options
+        <select name="time">
+            <option value="none">Please Select</option>
+            <option value="MMP">Moonlight Magic Package</option>
+            <option value="CTP">Champagne Taste Package</option>
+            <option value="LTP">Lucky Treasure Package</option>
+            <option value="24KGP">24 Karat Gold Package</option>
+        </select>
+
+    </label>
+</fieldset>
+
+<label>Comments:
+    <textarea name="comments">Please add any special requests.</textarea>
+</label>
+
+        <input type="submit" value="Purchase Concert Tickets">
+       </form>
+
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+         <p>&copy;2023 &bull; Elise Lindhorst &bull; <a href="mailto:zen@gmail.com">Email Us</a> </p>
+    </footer>
+</body>
+</html>
